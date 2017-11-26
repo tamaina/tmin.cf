@@ -47,9 +47,11 @@
 
     var url = QueryString.url;
     var shortname = QueryString.shortname;
+    var identifier = QueryString.identifier;
 
     var disqus_config = function () {
         this.page.url = url;
+        this.page.identifier = identifier;
     };
 
     (function () {
